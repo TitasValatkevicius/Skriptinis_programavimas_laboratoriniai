@@ -24,3 +24,9 @@ vektorius = N+1:0.5:N+4
 
 A = N:N+8
 A = reshape(A, 3, 3)'
+
+A(3,2)
+
+A(2:3, 1:2)
+
+A([1, end], [1, end])
