@@ -31,10 +31,6 @@ A(2:3, 1:2)
 
 A([1, end], [1, end])
 
-%perdarytas vektorius kad gautusi 3x3 matrica
+V = reshape(vektorius, 3, 3)'
 
-V = N+1:0.5:N+5
-
-V = reshape(V, 3, 3)'
-
-B = [A, V]
+%perda
