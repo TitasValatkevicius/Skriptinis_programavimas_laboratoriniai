@@ -40,3 +40,15 @@ S4 = length(S1)
 % e)
 Maziausia = min(S2)
 Didziausia = max(S2)
+
+
+
+
+
+
+% 2 klausimas
+
+A = input('vektorius A:')
+B = [A(end:-1:6) A(1:5)]
+disp('Vektorius b yra:')
+disp(B)
