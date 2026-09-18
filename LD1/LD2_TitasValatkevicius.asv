@@ -15,7 +15,3 @@ Z = reshape(Z, 3, 3)
 % b)
 Z(:,2) = []
 % c)
-Z = Z'
-
-% 3 uzduotis
-% a)
