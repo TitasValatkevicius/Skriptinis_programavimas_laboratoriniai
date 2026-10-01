@@ -3,13 +3,137 @@
 
 % 1 Uzduotis
 %a)
-t = linspace(-pi, pi, 50);
-y = sin(t);
+t = linspace(-pi, pi, 50)
+y = sin(t)
 
 figure
 plot(t, y, 'r--')
 
 %b)
 x = linspace(-pi, pi, 50)
-y1 = -x^2 + 9
-y2 = x^3 - 2*x^2 - 
+y1 = -x.^2 + 9
+y2 = x.^3 - 2*x.^2 - 9
+
+figure
+plot(x, y1, x, y2)
+
+%c)
+t = linspace(-pi, pi, 50)
+y = sin(t)
+
+figure
+plot(t, y, 'r--')
+
+xlabel('t')
+ylabel('y')
+title('y(t) = sin(t)')
+axis([min(t) max(t) min(y) max(y)])
+legend('y(t) = sin(t)', 'Location', 'best')
+grid on
+
+x = linspace(-pi, pi, 50)
+
+y1 = -x.^2 + 9
+y2 = x.^3 - 2*x.^2 - 9
+
+figure
+plot(x, y1, x, y2)
+
+xlabel('x')
+ylabel('y')
+title('Funkcijų grafikai')
+axis([min(x) max(x) min([y1 y2]) max([y1 y2])])
+legend('y(x) = -x^2 + 9', 'y(x) = x^3 - 2x^2 - 9', 'Location', 'best')
+grid on
+
+
+% 2 uzduotis
+
+%a)
+Matrica = [8 7 9 10
+    6 8 7 9
+    9 9 8 10
+    5 7 6 8
+    10 9 10 9
+    7 8 9 8]
+
+figure
+
+subplot(2,1,1)
+bar(Matrica')
+
+xlabel('Laboratorinis darbas')
+ylabel('Pažymys')
+title('Studentų pažymiai')
+ylim([0 10])
+
+legend('Studentas 1', 'Studentas 2', 'Studentas 3', 'Studentas 4', 'Studentas 5', 'Studentas 6')
+
+grid on
+
+%b)
+Matrica = [8 7 9 10
+    6 8 7 9
+    9 9 8 10
+    5 7 6 8
+    10 9 10 9
+    7 8 9 8]
+
+figure
+
+subplot(2,1,1)
+bar(Matrica')
+
+xlabel('Laboratorinis darbas')
+ylabel('Pažymys')
+title('Studentų pažymiai')
+ylim([0 10])
+legend('Studentas 1', 'Studentas 2', 'Studentas 3', 'Studentas 4', 'Studentas 5', 'Studentas 6')
+grid on
+
+
+vid = mean(Matrica)
+
+subplot(2,1,2)
+stem(1:4, vid)
+
+xlabel('Laboratorinis darbas')
+ylabel('Vidurkis')
+title('Laboratorinių darbų vidurkiai')
+ylim([0 10])
+grid on
+
+%c)
+P = [8 7 9 10
+    6 8 7 9
+    9 9 8 10
+    5 7 6 8
+    10 9 10 9
+    7 8 9 8]
+
+figure
+
+subplot(2,1,1)
+bar(P')
+
+xlabel('Laboratorinis darbas')
+ylabel('Pažymys')
+title('Studentų pažymiai')
+ylim([0 10])
+
+legend('Jonas', 'Mantas', 'Tomas', 'Lukas', 'Paulius', 'Domas')
+
+grid on
+
+
+vid = mean(Matrica)
+
+subplot(2,1,2)
+stem(1:4, vid)
+
+xlabel('Laboratorinis darbas')
+ylabel('Vidurkis')
+title('Laboratorinių darbų vidurkiai')
+ylim([0 10])
+
+grid on
