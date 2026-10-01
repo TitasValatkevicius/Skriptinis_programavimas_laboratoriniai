@@ -11,10 +11,5 @@ plot(t, y, 'r--')
 
 %b)
 x = linspace(-pi, pi, 50)
-y1 = -x.^2 + 9
-y2 = x.^3 - 2*x.^2 - 9
-
-figure
-plot(x, y1, x, y2)
-%c)
-
+y1 = -x^2 + 9
+y2 = x^3 - 2*x^2 - 
