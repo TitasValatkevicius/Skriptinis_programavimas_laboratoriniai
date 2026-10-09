@@ -16,3 +16,27 @@ ylabel('f(x)')
 title(pavadinimas)
 grid on
 
+%2 uzduotis
+
+while true
+
+    m = input('m= ')
+    n = input('n= ')
+
+    if m == n
+        break
+    end
+
+    while m ~= n
+
+        if m > n
+            m = m - n
+        else
+            n = n - m
+        end
+
+    end
+
+    disp(m)
+
+end
