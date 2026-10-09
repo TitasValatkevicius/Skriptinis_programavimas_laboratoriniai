@@ -40,3 +40,6 @@ while true
     disp(m)
 
 end
+
+%3 uzduotis
+
