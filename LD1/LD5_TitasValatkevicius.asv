@@ -1,5 +1,5 @@
 %1 uzduotis
-
+%a)
 
 x = -2:0.01:2
 f = cos(sin(2*pi*x))
@@ -10,9 +10,10 @@ pavadinimas = 'f(x) = cos(sin(2*pi*x))'
 
 figure
 
-plot(signalas.x, signalas.fx)
+plot(signalas.x, sigx)
 xlabel('x')
 ylabel('f(x)')
 title(pavadinimas)
 grid on
 
+%b)
