@@ -43,3 +43,22 @@ end
 
 %3 uzduotis
 
+sakinys = input('Iveskite sakini: ', 's')
+
+i = 1
+pasalinta = 0
+
+while i < length(sakinys)
+
+    if sakinys(i) == ' ' && sakinys(i+1) == ' '
+        sakinys(i+1) = []
+        pasalinta = pasalinta + 1
+    else
+        i = i + 1
+    end
+
+end
+
+disp(sakinys)
+
+disp(['Pasalintu tarpu skaicius: ', num2str(pasalinta)])
