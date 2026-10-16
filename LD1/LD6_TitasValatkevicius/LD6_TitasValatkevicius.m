@@ -10,3 +10,22 @@ y = skaicsinc(x)
 
 % 2 uzduotis
 
+clear
+clc
+
+global x y
+
+x = 2*pi:-0.1:-2*pi;
+y = zeros(size(x));
+
+funkcija_minus
+funkcija_plius
+
+plot(x, y, '-.k+')
+
+grid on
+xlabel('x')
+ylabel('y')
+title('y(x)')
+
+whos global
