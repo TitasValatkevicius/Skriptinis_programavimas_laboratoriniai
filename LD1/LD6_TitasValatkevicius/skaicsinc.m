@@ -10,10 +10,10 @@ function y = skaicsinc(x)
 % Isvestis:
 % y - funkcijos reiksme.
 
-y = ones(size(x));
+y = ones(size(x))
 
-ind = x ~= 0;
+ind = x ~= 0
 
-y(ind) = sin(x(ind)) ./ x(ind);
+y(ind) = sin(x(ind)) ./ x(ind)
 
 end
