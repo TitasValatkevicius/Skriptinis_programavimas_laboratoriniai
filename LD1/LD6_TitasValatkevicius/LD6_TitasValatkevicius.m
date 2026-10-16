@@ -21,6 +21,8 @@ y = zeros(size(x));
 funkcija_minus
 funkcija_plius
 
+figure
+
 plot(x, y, '-.k+')
 
 grid on
