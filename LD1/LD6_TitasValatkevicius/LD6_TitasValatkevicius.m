@@ -29,3 +29,14 @@ ylabel('y')
 title('y(x)')
 
 whos global
+
+
+% 3 uzduotis
+
+x = -1:0.1:1;
+
+graftancotan(x)
+
+a = graftancotan(x)
+
+[a, b] = graftancotan(x)
